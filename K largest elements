@@ -1,0 +1,33 @@
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int k=0;
+    vector<int> arr = {12,5,787,1,23,-10,115};
+    vector<int> arrx;
+   
+   sort(arr.begin(),arr.end(),greater<int>());
+   
+    for(auto itr:arr)
+   {
+       std::cout << itr << std::endl;
+   }
+   cout<<"Enter Size of k ";
+   cin>>k;
+ 
+   
+   for(int j=0;j<k;j++)
+ {
+    arrx.push_back(arr[j]); // Push into a New Array
+ }
+ 
+  for(auto itrx:arrx)
+   {
+       std::cout << itrx << std::endl;
+   }
+  
+    return 0;
+}
